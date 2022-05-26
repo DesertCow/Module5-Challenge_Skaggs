@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: brown;
+  --boxHeight: 110px;
+}
+
+
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -12,6 +20,22 @@ textarea{
   border-left: 1px solid black;
   padding: 10px;
 }
+
+.blockHour {
+  background-color:gray;
+  height: var(--boxHeight);
+}
+
+.hourEvent {
+  background-color:rgba(70, 237, 131, 0.542);
+  height: var(--boxHeight);
+}
+
+.hourSave  {
+  background-color:rgba(39, 56, 188, 0.654);
+  height: var(--boxHeight);
+}
+
 
 .jumbotron {
   text-align: center;

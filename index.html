@@ -18,21 +18,34 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <h1 class="display-3 text-center">Work Day Scheduler</h1>
+      <p class="lead text-center">A simple calendar app for scheduling your work day!</p>
+      <p id="currentDay" class="lead currentDayCL pt-4"></p>
     </header>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Timeblocks go here -->
+      <div class="row align-items-start">
+        <div class="col-1 m-0 p-0">
+          <p class="card-body blockHour text-center d-flex align-items-center">9am</p>
+        </div>
+        <div class="col-10 m-0 p-0">
+          <textarea class="form-control hourEvent"rows="4" style="height:100%;" placeholder="Enter Event Information"></textarea>
+        </div>
+        <div class="col-1 m-0 p-0">
+          <p class="card-body hourSave text-center d-flex align-items-center">Save</p>
+        </div>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src = "./assets/js/script.js"></script> 
   </body>
 </html>

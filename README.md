@@ -37,13 +37,13 @@ Version 0.1</h5>
 ---
 <p align="center"> <b>GIVEN</b> I am using a daily planner to create a schedule<br><br></p>
 <p align="left"><b>WHEN</b> I open the planner<br>
-❌ THEN the current day is displayed at the top of the calendar<br>
+✔️ THEN the current day is displayed at the top of the calendar<br>
 <b>WHEN</b> I scroll down <br>
 ❌ THEN I am presented with time blocks for standard business hours<br>
 <b>WHEN</b> I view the time blocks for that day <br>
 ❌ THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
 <b>WHEN</b> I click into a time block<br>
-❌ THEN I can enter an event<br>
+✔️ THEN I can enter an event<br>
 <b>WHEN</b> I click the save button for that time block<br>
 ❌ THEN the text for that event is saved in local storage<br>
 <b>WHEN</b> I refresh the page<br>
