@@ -1,6 +1,13 @@
 :root {
   --main-bg-color: brown;
   --boxHeight: 110px;
+
+  --hourBoxColor: #D4A373;
+  --meetingBoxColor: #FAEDCD;
+
+  --saveBoxColor: #CCD5AE;
+  --saveBoxShade: #515B2F;
+  
 }
 
 
@@ -22,17 +29,17 @@ textarea{
 }
 
 .blockHour {
-  background-color:gray;
+  background-color: var(--hourBoxColor);
   height: var(--boxHeight);
 }
 
-.hourEvent {
-  background-color:rgba(70, 237, 131, 0.542);
+.hourMeetingInfo {
+  background-color: var(--meetingBoxColor);
   height: var(--boxHeight);
 }
 
 .hourSave  {
-  background-color:rgba(39, 56, 188, 0.654);
+  background-color: var(--saveBoxColor);
   height: var(--boxHeight);
 }
 
