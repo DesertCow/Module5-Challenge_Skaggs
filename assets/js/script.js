@@ -42,7 +42,8 @@ saveButton.addEventListener("click", function (clickEvent) {
 
     changeToClearButton(objCount);
 
-    saveMeetingInfo(clickEvent);
+    // saveMeetingInfo(clickEvent);
+    saveMeetingInfo(objCount, objCount);
   } else {
     meetingTextInput.readOnly = false;
     changeToSaveButton(objCount);
@@ -80,21 +81,40 @@ function init() {
   // Add Time to Front Page
   currentTime.format("MMM Do YYYY");
   currentTimeEl.textContent = currentTime.format("MMM Do YYYY");
+
+  //loadDataFromLocal(0);
+  //loadDataFromLocal(1);
+  //loadDataFromLocal(2);
+  //loadDataFromLocal(3);
+  //loadDataFromLocal(4);
+  //loadDataFromLocal(5);
+  //loadDataFromLocal(6);
+
   console.log("Init Complete!");
 }
 
 // ################# FUNC_NAME #################
 
-function saveMeetingInfo(event) {
+function saveMeetingInfo(hour, data) {
 
 
   //console.log("Save Meeting DATA = " + meetingTextInput.value)
   //console.log("Save Meeting DATA Stringify = " + JSON.stringify(meetingTextInput.value))
-  localStorage.setItem("meetingInfo", meetingTextInput.value);
-  //localStorage.setItem("meetingInfo", JSON.stringify(meetingTextInput.value));
+  //localStorage.setItem(hour + "-meetingInfo", meetingTextInput.value);
+  localStorage.setItem(hour + "-meetingInfo", JSON.stringify(meetingTextInput.value));
+  localStorage.setItem("0-meetingInfo", JSON.stringify(meetingTextInput.value));
 
 }
 
+// ################# loadDataFromLocal #################
+function loadDataFromLocal(hour) {
+
+  var key = hour + "-meetingInfo";
+  console.log("Hour =" + key);
+  console.log("Local Store Meeting Text =" + JSON.parse(localStorage.getItem("0-meetingInfo")));
+  //meetingTextInput.value = JSON.parse(localStorage.getItem(hour + "-meetingInfo"));
+  meetingTextInput.value = JSON.parse(localStorage.getItem("0-meetingInfo"));
+}
 
 // ################# changeToClearButton #################
 function changeToClearButton(Count) {
@@ -114,8 +134,6 @@ function changeToSaveButton(Count) {
   console.log("Flag = " + planner[Count].saveButtonFlag)
 }
 
-// ################# FUNC_NAME #################
-
 
 // ################# FUNC_NAME #################
 
@@ -131,5 +149,5 @@ function changeToSaveButton(Count) {
 init();
 // Now waiting for user to press Start or High Score Button...
 
-
+loadDataFromLocal(0);
 // =========================== END MAIN  ==========================
