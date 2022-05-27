@@ -15,6 +15,19 @@ Version 0.1</h5>
 
 ---
 
+<h3 align="center">📡 📡 Deployment Information 📡 📡</h3>
+
+---
+
+<div align="center">
+🚀 <a href="https://github.com/DesertCow/Module5-Challenge_Skaggs">github.com/DesertCow/Module5-Challenge_Skaggs</a> 🚀
+<br>
+<br>
+🛰️ <a href="https://desertcow.github.io/Module5-Challenge_Skaggs">desertcow.github.io/Module5-Challenge_Skaggs/</a> 🛰️
+</div>
+
+---
+
 <br>
 <br>
 <br>
@@ -41,7 +54,7 @@ Version 0.1</h5>
 <b>WHEN</b> I scroll down <br>
 ✔️ THEN I am presented with time blocks for standard business hours<br>
 <b>WHEN</b> I view the time blocks for that day <br>
-✔️ THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
+❌ THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
 <b>WHEN</b> I click into a time block<br>
 ✔️ THEN I can enter an event<br>
 <b>WHEN</b> I click the save button for that time block<br>
@@ -86,18 +99,7 @@ Version 0.1</h5>
 <br>
 <br>
 
-<h3 align="center">📡 📡 Deployment Information 📡 📡</h3>
 
----
-
-<div align="center">
-🚀 <a href="https://github.com/DesertCow/Module5-Challenge_Skaggs">github.com/DesertCow/Module5-Challenge_Skaggs</a> 🚀
-<br>
-<br>
-🛰️ <a href="https://desertcow.github.io/Module5-Challenge_Skaggs">desertcow.github.io/Module5-Challenge_Skaggs/</a> 🛰️
-</div>
-
----
 
 <br>
 <br>
