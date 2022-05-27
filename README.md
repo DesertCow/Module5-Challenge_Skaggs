@@ -10,8 +10,11 @@
 By Clayton Skaggs<br>
 (WW21.4) / May 26th 2022
 
-Version 0.1</h5>
+Version 0.2</h5>
 </div>
+
+<br>
+<br>
 
 ---
 
@@ -54,7 +57,7 @@ Version 0.1</h5>
 <b>WHEN</b> I scroll down <br>
 ✔️ THEN I am presented with time blocks for standard business hours<br>
 <b>WHEN</b> I view the time blocks for that day <br>
-❌ THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
+✔️ THEN each time block is color-coded to indicate whether it is in the past, present, or future<br>
 <b>WHEN</b> I click into a time block<br>
 ✔️ THEN I can enter an event<br>
 <b>WHEN</b> I click the save button for that time block<br>
@@ -65,20 +68,6 @@ Version 0.1</h5>
 <br>
 <br>
 
-<h3 align="center">⚡ ⚡ Features ⚡ ⚡</h3>
-
----
-
-<ul>
-  <li>⚡ </li>
-  <li>💥 </li>
-  <li>⚡ </li>
-  <li>💥 </li>
-  <li>⚡ </li>
-</ul>
-
-<br>
-<br>
 
 <h3 align="center">💼 💼 Mock Up 💼 💼</h3>
 

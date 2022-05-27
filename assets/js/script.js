@@ -87,7 +87,7 @@ var planner = [
 //var objCount = 0;
 
 
-// ################# Button Listeners #################
+// // ################################## Button Listeners ##################################
 
 saveButton9.addEventListener("click", function (clickEvent) {
 
@@ -96,10 +96,8 @@ saveButton9.addEventListener("click", function (clickEvent) {
     meetingTextInput9.style.backgroundColor = '#EBB938';
 
     changeToClearButton(0, 9);
+    saveMeetingInfo(masterKey, 0, meetingTextInput9.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 0, meetingTextInput9.value)
   } else {
     meetingTextInput9.readOnly = false;
     changeToSaveButton(0, 9);
@@ -115,10 +113,8 @@ saveButton10.addEventListener("click", function (clickEvent) {
     meetingTextInput10.style.backgroundColor = '#EBB938';
 
     changeToClearButton(1, 10);
+    saveMeetingInfo(masterKey, 1, meetingTextInput10.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 1, meetingTextInput10.value)
   } else {
     meetingTextInput10.readOnly = false;
     changeToSaveButton(1, 10);
@@ -134,10 +130,8 @@ saveButton11.addEventListener("click", function (clickEvent) {
     meetingTextInput11.style.backgroundColor = '#EBB938';
 
     changeToClearButton(2, 11);
+    saveMeetingInfo(masterKey, 2, meetingTextInput11.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 2, meetingTextInput11.value)
   } else {
     meetingTextInput11.readOnly = false;
     changeToSaveButton(2, 11);
@@ -153,10 +147,8 @@ saveButton12.addEventListener("click", function (clickEvent) {
     meetingTextInput12.style.backgroundColor = '#EBB938';
 
     changeToClearButton(3, 12);
+    saveMeetingInfo(masterKey, 3, meetingTextInput12.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 3, meetingTextInput12.value)
   } else {
     meetingTextInput12.readOnly = false;
     changeToSaveButton(3, 12);
@@ -172,10 +164,8 @@ saveButton13.addEventListener("click", function (clickEvent) {
     meetingTextInput13.style.backgroundColor = '#EBB938';
 
     changeToClearButton(4, 13);
+    saveMeetingInfo(masterKey, 4, meetingTextInput13.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 4, meetingTextInput13.value)
   } else {
     meetingTextInput13.readOnly = false;
     changeToSaveButton(4, 13);
@@ -191,10 +181,8 @@ saveButton14.addEventListener("click", function (clickEvent) {
     meetingTextInput14.style.backgroundColor = '#EBB938';
 
     changeToClearButton(5, 14);
+    saveMeetingInfo(masterKey, 5, meetingTextInput14.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 5, meetingTextInput14.value)
   } else {
     meetingTextInput14.readOnly = false;
     changeToSaveButton(5, 14);
@@ -210,10 +198,8 @@ saveButton15.addEventListener("click", function (clickEvent) {
     meetingTextInput15.style.backgroundColor = '#EBB938';
 
     changeToClearButton(6, 15);
+    saveMeetingInfo(masterKey, 6, meetingTextInput15.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 6, meetingTextInput15.value)
   } else {
     meetingTextInput15.readOnly = false;
     changeToSaveButton(6, 15);
@@ -229,10 +215,8 @@ saveButton16.addEventListener("click", function (clickEvent) {
     meetingTextInput16.style.backgroundColor = '#EBB938';
 
     changeToClearButton(7, 16);
+    saveMeetingInfo(masterKey, 7, meetingTextInput16.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 7, meetingTextInput16.value)
   } else {
     meetingTextInput16.readOnly = false;
     changeToSaveButton(7, 16);
@@ -248,35 +232,33 @@ saveButton17.addEventListener("click", function (clickEvent) {
     meetingTextInput17.style.backgroundColor = '#EBB938';
 
     changeToClearButton(8, 17);
+    saveMeetingInfo(masterKey, 8, meetingTextInput17.value);
 
-    // saveMeetingInfo(clickEvent);
-    //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 8, meetingTextInput17.value)
   } else {
     meetingTextInput17.readOnly = false;
-    changeToSaveButton(8, 15);
+    changeToSaveButton(8, 17);
     meetingTextInput17.style.backgroundColor = '#FAEDCD';
   }
   clickEvent.preventDefault();
 });
 
-// ################# Mouse Over Listeners #################
+// ################################## Mouse Over/Out Listeners ##################################
 
 saveButton9.addEventListener('mouseover', function handleMouseOver() {
 
   if (planner[0].saveButtonFlag) {
     saveButton9.style.backgroundColor = '#515B2F';
   } else {
-    saveButton9.style.backgroundColor = '#E5D2FC';
+    saveButton9.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton9.addEventListener('mouseout', function handleMouseOut() {
   if (planner[0].saveButtonFlag) {
-    saveButton9.style.backgroundColor = '#CCD5AE'; //A462F4
+    saveButton9.style.backgroundColor = '#CCD5AE';
   } else {
-    saveButton9.style.backgroundColor = '#A462F4'; //CCD5AE
+    saveButton9.style.backgroundColor = '#F46269';
   }
 });
 
@@ -285,7 +267,7 @@ saveButton10.addEventListener('mouseover', function handleMouseOver() {
   if (planner[1].saveButtonFlag) {
     saveButton10.style.backgroundColor = '#515B2F';
   } else {
-    saveButton10.style.backgroundColor = '#E5D2FC';
+    saveButton10.style.backgroundColor = '#FABCBF';
   }
 
 });
@@ -294,7 +276,7 @@ saveButton10.addEventListener('mouseout', function handleMouseOut() {
   if (planner[1].saveButtonFlag) {
     saveButton10.style.backgroundColor = '#CCD5AE';
   } else {
-    saveButton10.style.backgroundColor = '#A462F4';
+    saveButton10.style.backgroundColor = '#F46269';
   }
 });
 
@@ -303,13 +285,17 @@ saveButton11.addEventListener('mouseover', function handleMouseOver() {
   if (planner[2].saveButtonFlag) {
     saveButton11.style.backgroundColor = '#515B2F';
   } else {
-    saveButton11.style.backgroundColor = '#E5D2FC';
+    saveButton11.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton11.addEventListener('mouseout', function handleMouseOut() {
-  saveButton11.style.backgroundColor = '#CCD5AE';
+  if (planner[2].saveButtonFlag) {
+    saveButton11.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton11.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton12.addEventListener('mouseover', function handleMouseOver() {
@@ -317,13 +303,17 @@ saveButton12.addEventListener('mouseover', function handleMouseOver() {
   if (planner[3].saveButtonFlag) {
     saveButton12.style.backgroundColor = '#515B2F';
   } else {
-    saveButton12.style.backgroundColor = '#E5D2FC';
+    saveButton12.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton12.addEventListener('mouseout', function handleMouseOut() {
-  saveButton12.style.backgroundColor = '#CCD5AE';
+  if (planner[3].saveButtonFlag) {
+    saveButton12.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton12.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton13.addEventListener('mouseover', function handleMouseOver() {
@@ -331,13 +321,17 @@ saveButton13.addEventListener('mouseover', function handleMouseOver() {
   if (planner[4].saveButtonFlag) {
     saveButton13.style.backgroundColor = '#515B2F';
   } else {
-    saveButton13.style.backgroundColor = '#E5D2FC';
+    saveButton13.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton13.addEventListener('mouseout', function handleMouseOut() {
-  saveButton13.style.backgroundColor = '#CCD5AE';
+  if (planner[4].saveButtonFlag) {
+    saveButton13.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton13.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton14.addEventListener('mouseover', function handleMouseOver() {
@@ -345,13 +339,17 @@ saveButton14.addEventListener('mouseover', function handleMouseOver() {
   if (planner[5].saveButtonFlag) {
     saveButton14.style.backgroundColor = '#515B2F';
   } else {
-    saveButton14.style.backgroundColor = '#E5D2FC';
+    saveButton14.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton14.addEventListener('mouseout', function handleMouseOut() {
-  saveButton14.style.backgroundColor = '#CCD5AE';
+  if (planner[5].saveButtonFlag) {
+    saveButton14.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton14.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton15.addEventListener('mouseover', function handleMouseOver() {
@@ -359,13 +357,17 @@ saveButton15.addEventListener('mouseover', function handleMouseOver() {
   if (planner[6].saveButtonFlag) {
     saveButton15.style.backgroundColor = '#515B2F';
   } else {
-    saveButton15.style.backgroundColor = '#E5D2FC';
+    saveButton15.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton15.addEventListener('mouseout', function handleMouseOut() {
-  saveButton15.style.backgroundColor = '#CCD5AE';
+  if (planner[6].saveButtonFlag) {
+    saveButton15.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton15.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton16.addEventListener('mouseover', function handleMouseOver() {
@@ -373,13 +375,17 @@ saveButton16.addEventListener('mouseover', function handleMouseOver() {
   if (planner[7].saveButtonFlag) {
     saveButton16.style.backgroundColor = '#515B2F';
   } else {
-    saveButton16.style.backgroundColor = '#E5D2FC';
+    saveButton16.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton16.addEventListener('mouseout', function handleMouseOut() {
-  saveButton16.style.backgroundColor = '#CCD5AE';
+  if (planner[7].saveButtonFlag) {
+    saveButton16.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton16.style.backgroundColor = '#F46269';
+  }
 });
 
 saveButton17.addEventListener('mouseover', function handleMouseOver() {
@@ -387,16 +393,18 @@ saveButton17.addEventListener('mouseover', function handleMouseOver() {
   if (planner[8].saveButtonFlag) {
     saveButton17.style.backgroundColor = '#515B2F';
   } else {
-    saveButton17.style.backgroundColor = '#E5D2FC';
+    saveButton17.style.backgroundColor = '#FABCBF';
   }
 
 });
 
 saveButton17.addEventListener('mouseout', function handleMouseOut() {
-  saveButton17.style.backgroundColor = '#CCD5AE';
+  if (planner[8].saveButtonFlag) {
+    saveButton17.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton17.style.backgroundColor = '#F46269';
+  }
 });
-
-
 
 // ==================== Function Decleration  =====================
 
@@ -443,18 +451,6 @@ function init() {
     eval(currentBoxVar);
   }
 
-
-  //loadDataFromLocal(masterKey);
-
-
-  //loadDataFromLocal(0);
-  //loadDataFromLocal(1);
-  //loadDataFromLocal(2);
-  //loadDataFromLocal(3);
-  //loadDataFromLocal(4);
-  //loadDataFromLocal(5);
-  //loadDataFromLocal(6);
-
   console.log("Init Complete!");
 }
 
@@ -482,7 +478,7 @@ function changeToClearButton(Count, row) {
   console.log("Flag = " + planner[Count].saveButtonFlag + " | " + Count);
   planner[Count].saveButtonFlag = false;
   eval("saveButton" + row + ".textContent = 'Clear';");
-  eval("saveButton" + row + ".style.backgroundColor = '#A462F4'");
+  eval("saveButton" + row + ".style.backgroundColor = '#F46269'");
 
 }
 
@@ -492,7 +488,6 @@ function changeToSaveButton(Count, row) {
   planner[Count].saveButtonFlag = true;
   eval("saveButton" + row + ".textContent = 'Save'");
   eval("saveButton" + row + ".style.backgroundColor = '#515B2F'");
-
 }
 
 
