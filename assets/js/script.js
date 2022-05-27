@@ -563,22 +563,20 @@ function pageRefresh(storeOBJ) {
 
 }
 
-// ################# FUNC_NAME #################
-
 // =========================== MAIN  ==============================
 
 init();
 // Now waiting for user to press Start or High Score Button...
 
-//loadDataFromLocal(0);
 
-updateSchedule("Weekly Technical Project Sync", 0, planner);
-updateSchedule("1:1 meeting with Manager", 1, planner);
-updateSchedule("Pair Coding Session", 2, planner);
-updateSchedule("Peer Code Review", 3, planner);
-updateSchedule("Lunch", 4, planner);
-updateSchedule("Training Session", 5, planner);
-updateSchedule("Coding Block", 6, planner);
-updateSchedule("Coding Block", 7, planner);
-updateSchedule("SUM Meeting + Happy Hour", 8, planner);
+// Debug Data Load
+// updateSchedule("Weekly Technical Project Sync", 0, planner);
+// updateSchedule("1:1 meeting with Manager", 1, planner);
+// updateSchedule("Pair Coding Session", 2, planner);
+// updateSchedule("Peer Code Review", 3, planner);
+// updateSchedule("Lunch", 4, planner);
+// updateSchedule("Training Session", 5, planner);
+// updateSchedule("Coding Block", 6, planner);
+// updateSchedule("Coding Block", 7, planner);
+// updateSchedule("SUM Meeting + Happy Hour", 8, planner);
 // =========================== END MAIN  ==========================
