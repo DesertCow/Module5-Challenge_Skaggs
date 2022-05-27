@@ -45,9 +45,9 @@ Version 0.1</h5>
 <b>WHEN</b> I click into a time block<br>
 ✔️ THEN I can enter an event<br>
 <b>WHEN</b> I click the save button for that time block<br>
-❌ THEN the text for that event is saved in local storage<br>
+✔️ THEN the text for that event is saved in local storage<br>
 <b>WHEN</b> I refresh the page<br>
-❌ THEN the saved events persist<br>
+✔️ THEN the saved events persist<br>
 <br>
 <br>
 <br>
