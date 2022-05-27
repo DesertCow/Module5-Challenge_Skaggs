@@ -11,7 +11,17 @@ var masterKey = "WorkDayScheduleData";
 
 // Grab Display Fields in HTML
 var currentTimeEl = document.querySelector(".currentDayCL");
-var meetingTextInput = document.querySelector(".hourMeetingInfo");
+var currentHourEl = document.querySelector(".currentTimeCL");
+
+var meetingTextInput9 = document.querySelector(".hourMeetingInfo9");
+var meetingTextInput10 = document.querySelector(".hourMeetingInfo10");
+var meetingTextInput11 = document.querySelector(".hourMeetingInfo11");
+var meetingTextInput12 = document.querySelector(".hourMeetingInfo12");
+var meetingTextInput13 = document.querySelector(".hourMeetingInfo13");
+var meetingTextInput14 = document.querySelector(".hourMeetingInfo14");
+var meetingTextInput15 = document.querySelector(".hourMeetingInfo15");
+var meetingTextInput16 = document.querySelector(".hourMeetingInfo16");
+var meetingTextInput17 = document.querySelector(".hourMeetingInfo17");
 
 var saveButton9 = document.querySelector(".hourSave9");
 var saveButton10 = document.querySelector(".hourSave10");
@@ -238,6 +248,42 @@ function init() {
   // Add Time to Front Page
   currentTime.format("MMM Do YYYY");
   currentTimeEl.textContent = currentTime.format("MMM Do YYYY");
+  currentHourEl.textContent = currentTime.format("h:mm A");
+
+  //colorTime = currentTime.format("H");
+  colorTime = 22;
+  console.log("Color Time = " + colorTime)
+
+  for (var i = 9; i < 18; i++) {
+
+    var iBoxVar;
+
+    if (i < colorTime) {
+      //Past
+      iBoxVar = "meetingTextInput" + i + ".style.backgroundColor = '#C0C5BF'";
+      if (8 < i < 18) {
+        eval(iBoxVar);
+      }
+
+
+    } else {
+      //Future
+      iBoxVar = "meetingTextInput" + i + ".style.backgroundColor = '#D4A373'";
+      if (8 << i << 18) {
+        eval(iBoxVar);
+      }
+
+    }
+  }
+
+  //Set Current Time box to green
+
+  if ((8 < colorTime) && (colorTime < 18)) {
+    var currentBoxVar = "meetingTextInput" + colorTime + ".style.backgroundColor = '#CCD5AE'";
+    console.log("currentBoxEVAL = " + currentBoxVar)
+    eval(currentBoxVar);
+  }
+
 
   //loadDataFromLocal(masterKey);
 
@@ -349,7 +395,15 @@ function pageRefresh(storeOBJ) {
 
   //Refresh each meeting info block on page
 
-  meetingTextInput.value = storeOBJ[0].meetingNotes;
+  meetingTextInput9.value = storeOBJ[0].meetingNotes;
+  meetingTextInput10.value = storeOBJ[1].meetingNotes;
+  meetingTextInput11.value = storeOBJ[2].meetingNotes;
+  meetingTextInput12.value = storeOBJ[3].meetingNotes;
+  meetingTextInput13.value = storeOBJ[4].meetingNotes;
+  meetingTextInput14.value = storeOBJ[5].meetingNotes;
+  meetingTextInput15.value = storeOBJ[6].meetingNotes;
+  meetingTextInput16.value = storeOBJ[7].meetingNotes;
+  meetingTextInput17.value = storeOBJ[8].meetingNotes;
 
   //Update all buttons to reflect state defined by planner.saveButtonFlag
 

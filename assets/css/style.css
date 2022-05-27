@@ -7,7 +7,7 @@
 
   --saveBoxColor: #CCD5AE;
   --saveBoxShade: #515B2F;
-  
+
 }
 
 
@@ -41,6 +41,10 @@ textarea{
 .hourSave  {
   background-color: var(--saveBoxColor);
   height: var(--boxHeight);
+}
+
+.currentTimeCL {
+  background-color: gray;
 }
 
 
