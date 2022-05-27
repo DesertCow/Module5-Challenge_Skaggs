@@ -417,8 +417,8 @@ function init() {
   currentTimeEl.textContent = currentTime.format("MMM Do YYYY");
   currentHourEl.textContent = currentTime.format("h:mm A");
 
-  //colorTime = currentTime.format("H");
-  colorTime = 22;
+  colorTime = currentTime.format("H");
+  //colorTime = 22;
   console.log("Color Time = " + colorTime)
 
   for (var i = 9; i < 18; i++) {
@@ -477,7 +477,7 @@ function saveMeetingInfo(key, time, data) {
 function changeToClearButton(Count, row) {
   console.log("Flag = " + planner[Count].saveButtonFlag + " | " + Count);
   planner[Count].saveButtonFlag = false;
-  eval("saveButton" + row + ".textContent = 'Clear';");
+  eval("saveButton" + row + ".textContent = 'Edit';");
   eval("saveButton" + row + ".style.backgroundColor = '#F46269'");
 
 }
