@@ -84,28 +84,179 @@ var planner = [
 
 
 
-var objCount = 0;
+//var objCount = 0;
 
 
 // ################# Button Listeners #################
 
 saveButton9.addEventListener("click", function (clickEvent) {
 
-  if (planner[objCount].saveButtonFlag) {
-    meetingTextInput.readOnly = true;
-    meetingTextInput.style.backgroundColor = '#EBB938';
+  if (planner[0].saveButtonFlag) {
+    meetingTextInput9.readOnly = true;
+    meetingTextInput9.style.backgroundColor = '#EBB938';
 
-    changeToClearButton(objCount);
+    changeToClearButton(0, 9);
 
     // saveMeetingInfo(clickEvent);
     //saveMeetingInfo(objCount, objCount);
-    saveMeetingInfo(masterKey, 0, meetingTextInput.value)
+    saveMeetingInfo(masterKey, 0, meetingTextInput9.value)
   } else {
-    meetingTextInput.readOnly = false;
-    changeToSaveButton(objCount);
-    meetingTextInput.style.backgroundColor = '#FAEDCD';
+    meetingTextInput9.readOnly = false;
+    changeToSaveButton(0, 9);
+    meetingTextInput9.style.backgroundColor = '#FAEDCD';
   }
+  clickEvent.preventDefault();
+});
 
+saveButton10.addEventListener("click", function (clickEvent) {
+
+  if (planner[1].saveButtonFlag) {
+    meetingTextInput10.readOnly = true;
+    meetingTextInput10.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(1, 10);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 1, meetingTextInput10.value)
+  } else {
+    meetingTextInput10.readOnly = false;
+    changeToSaveButton(1, 10);
+    meetingTextInput10.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton11.addEventListener("click", function (clickEvent) {
+
+  if (planner[2].saveButtonFlag) {
+    meetingTextInput11.readOnly = true;
+    meetingTextInput11.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(2, 11);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 2, meetingTextInput11.value)
+  } else {
+    meetingTextInput11.readOnly = false;
+    changeToSaveButton(2, 11);
+    meetingTextInput11.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton12.addEventListener("click", function (clickEvent) {
+
+  if (planner[3].saveButtonFlag) {
+    meetingTextInput12.readOnly = true;
+    meetingTextInput12.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(3, 12);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 3, meetingTextInput12.value)
+  } else {
+    meetingTextInput12.readOnly = false;
+    changeToSaveButton(3, 12);
+    meetingTextInput12.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton13.addEventListener("click", function (clickEvent) {
+
+  if (planner[4].saveButtonFlag) {
+    meetingTextInput13.readOnly = true;
+    meetingTextInput13.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(4, 13);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 4, meetingTextInput13.value)
+  } else {
+    meetingTextInput13.readOnly = false;
+    changeToSaveButton(4, 13);
+    meetingTextInput13.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton14.addEventListener("click", function (clickEvent) {
+
+  if (planner[5].saveButtonFlag) {
+    meetingTextInput14.readOnly = true;
+    meetingTextInput14.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(5, 14);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 5, meetingTextInput14.value)
+  } else {
+    meetingTextInput14.readOnly = false;
+    changeToSaveButton(5, 14);
+    meetingTextInput14.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton15.addEventListener("click", function (clickEvent) {
+
+  if (planner[6].saveButtonFlag) {
+    meetingTextInput15.readOnly = true;
+    meetingTextInput15.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(6, 15);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 6, meetingTextInput15.value)
+  } else {
+    meetingTextInput15.readOnly = false;
+    changeToSaveButton(6, 15);
+    meetingTextInput15.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton16.addEventListener("click", function (clickEvent) {
+
+  if (planner[7].saveButtonFlag) {
+    meetingTextInput16.readOnly = true;
+    meetingTextInput16.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(7, 16);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 7, meetingTextInput16.value)
+  } else {
+    meetingTextInput16.readOnly = false;
+    changeToSaveButton(7, 16);
+    meetingTextInput16.style.backgroundColor = '#FAEDCD';
+  }
+  clickEvent.preventDefault();
+});
+
+saveButton17.addEventListener("click", function (clickEvent) {
+
+  if (planner[8].saveButtonFlag) {
+    meetingTextInput17.readOnly = true;
+    meetingTextInput17.style.backgroundColor = '#EBB938';
+
+    changeToClearButton(8, 17);
+
+    // saveMeetingInfo(clickEvent);
+    //saveMeetingInfo(objCount, objCount);
+    saveMeetingInfo(masterKey, 8, meetingTextInput17.value)
+  } else {
+    meetingTextInput17.readOnly = false;
+    changeToSaveButton(8, 15);
+    meetingTextInput17.style.backgroundColor = '#FAEDCD';
+  }
   clickEvent.preventDefault();
 });
 
@@ -113,7 +264,7 @@ saveButton9.addEventListener("click", function (clickEvent) {
 
 saveButton9.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[0].saveButtonFlag) {
     saveButton9.style.backgroundColor = '#515B2F';
   } else {
     saveButton9.style.backgroundColor = '#E5D2FC';
@@ -122,12 +273,16 @@ saveButton9.addEventListener('mouseover', function handleMouseOver() {
 });
 
 saveButton9.addEventListener('mouseout', function handleMouseOut() {
-  saveButton9.style.backgroundColor = '#CCD5AE';
+  if (planner[0].saveButtonFlag) {
+    saveButton9.style.backgroundColor = '#CCD5AE'; //A462F4
+  } else {
+    saveButton9.style.backgroundColor = '#A462F4'; //CCD5AE
+  }
 });
 
 saveButton10.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[1].saveButtonFlag) {
     saveButton10.style.backgroundColor = '#515B2F';
   } else {
     saveButton10.style.backgroundColor = '#E5D2FC';
@@ -136,12 +291,16 @@ saveButton10.addEventListener('mouseover', function handleMouseOver() {
 });
 
 saveButton10.addEventListener('mouseout', function handleMouseOut() {
-  saveButton10.style.backgroundColor = '#CCD5AE';
+  if (planner[1].saveButtonFlag) {
+    saveButton10.style.backgroundColor = '#CCD5AE';
+  } else {
+    saveButton10.style.backgroundColor = '#A462F4';
+  }
 });
 
 saveButton11.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[2].saveButtonFlag) {
     saveButton11.style.backgroundColor = '#515B2F';
   } else {
     saveButton11.style.backgroundColor = '#E5D2FC';
@@ -155,7 +314,7 @@ saveButton11.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton12.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[3].saveButtonFlag) {
     saveButton12.style.backgroundColor = '#515B2F';
   } else {
     saveButton12.style.backgroundColor = '#E5D2FC';
@@ -169,7 +328,7 @@ saveButton12.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton13.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[4].saveButtonFlag) {
     saveButton13.style.backgroundColor = '#515B2F';
   } else {
     saveButton13.style.backgroundColor = '#E5D2FC';
@@ -183,7 +342,7 @@ saveButton13.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton14.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[5].saveButtonFlag) {
     saveButton14.style.backgroundColor = '#515B2F';
   } else {
     saveButton14.style.backgroundColor = '#E5D2FC';
@@ -197,7 +356,7 @@ saveButton14.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton15.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[6].saveButtonFlag) {
     saveButton15.style.backgroundColor = '#515B2F';
   } else {
     saveButton15.style.backgroundColor = '#E5D2FC';
@@ -211,7 +370,7 @@ saveButton15.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton16.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[7].saveButtonFlag) {
     saveButton16.style.backgroundColor = '#515B2F';
   } else {
     saveButton16.style.backgroundColor = '#E5D2FC';
@@ -225,7 +384,7 @@ saveButton16.addEventListener('mouseout', function handleMouseOut() {
 
 saveButton17.addEventListener('mouseover', function handleMouseOver() {
 
-  if (planner[objCount].saveButtonFlag) {
+  if (planner[8].saveButtonFlag) {
     saveButton17.style.backgroundColor = '#515B2F';
   } else {
     saveButton17.style.backgroundColor = '#E5D2FC';
@@ -299,44 +458,45 @@ function init() {
   console.log("Init Complete!");
 }
 
-// ################# FUNC_NAME #################
-
+// ################# saveMeetingInfo #################
 function saveMeetingInfo(key, time, data) {
 
   var tempPlanner = JSON.parse(localStorage.getItem(key));
 
-  tempPlanner[time].meetingNotes = meetingTextInput.value;
+  console.log("tempPlanner||   tempPlanner[" + time + "].meetingNotes = meetingTextInput" + (time + 9) + ".value;")
+  console.log("FFFGFGFG = " + meetingTextInput17.value);
+  eval("tempPlanner[" + time + "].meetingNotes = meetingTextInput" + (time + 9) + ".value;")
 
   //console.log("Save Meeting DATA = " + meetingTextInput.value)
   //console.log("Save Meeting DATA Stringify = " + JSON.stringify(meetingTextInput.value))
   //localStorage.setItem(hour + "-meetingInfo", meetingTextInput.value);
-  localStorage.setItem(key, JSON.stringify(meetingTextInput.value));
-  localStorage.setItem("0-meetingInfo", JSON.stringify(meetingTextInput.value));
+  eval("localStorage.setItem(key, JSON.stringify(meetingTextInput" + (time + 9) + ".value));");
+  eval('localStorage.setItem("0 - meetingInfo", JSON.stringify(meetingTextInput' + (time + 9) + '.value));');
 
 }
 
 
 
 // ################# changeToClearButton #################
-function changeToClearButton(Count) {
+function changeToClearButton(Count, row) {
+  console.log("Flag = " + planner[Count].saveButtonFlag + " | " + Count);
   planner[Count].saveButtonFlag = false;
-  saveButton.textContent = "Clear";
-  saveButton.style.backgroundColor = '#A462F4';
+  eval("saveButton" + row + ".textContent = 'Clear';");
+  eval("saveButton" + row + ".style.backgroundColor = '#A462F4'");
 
-  console.log("Flag = " + planner[Count].saveButtonFlag)
 }
 
 // ################# changeToSaveButton #################
-function changeToSaveButton(Count) {
+function changeToSaveButton(Count, row) {
+  console.log("Flag = " + planner[Count].saveButtonFlag + " | " + Count);
   planner[Count].saveButtonFlag = true;
-  saveButton.textContent = "Save";
-  saveButton.style.backgroundColor = '#515B2F';
+  eval("saveButton" + row + ".textContent = 'Save'");
+  eval("saveButton" + row + ".style.backgroundColor = '#515B2F'");
 
-  console.log("Flag = " + planner[Count].saveButtonFlag)
 }
 
 
-// ################# FUNC_NAME #################
+// ################# updateSchedule #################
 function updateSchedule(data, time, storeOBJ) {
 
   console.log("This Function stores [" + data + "] For the corresponding time " + time);
@@ -349,10 +509,9 @@ function updateSchedule(data, time, storeOBJ) {
 
   pageRefresh(storeOBJ);
 
-
-
 }
 
+// ################# loadSchedule #################
 function loadSchedule() {
 
   console.log("This Functions loads the previous session data ");
@@ -387,7 +546,7 @@ function storeToLocal(data, key) {
   //meetingTextInput.value = JSON.parse(localStorage.getItem("0-meetingInfo"));
 }
 
-// ################# FUNC_NAME #################
+// ################# pageRefresh #################
 function pageRefresh(storeOBJ) {
 
   // Refresh all Meetings notes on page with the data from storeOBJ
@@ -418,7 +577,13 @@ init();
 
 //loadDataFromLocal(0);
 
-updateSchedule("Hello Test1 2 3", 0, planner);
-updateSchedule("HellDSAASSADSA", 3, planner);
-updateSchedule("HelSADASDSA1 2 3", 2, planner);
+updateSchedule("Weekly Technical Project Sync", 0, planner);
+updateSchedule("1:1 meeting with Manager", 1, planner);
+updateSchedule("Pair Coding Session", 2, planner);
+updateSchedule("Peer Code Review", 3, planner);
+updateSchedule("Lunch", 4, planner);
+updateSchedule("Training Session", 5, planner);
+updateSchedule("Coding Block", 6, planner);
+updateSchedule("Coding Block", 7, planner);
+updateSchedule("SUM Meeting + Happy Hour", 8, planner);
 // =========================== END MAIN  ==========================
